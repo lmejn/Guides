@@ -17,11 +17,14 @@ In these steps, we are moving the branch `<branch_to_move>` from the repository 
 
 1. Moving the branch into a new repository
 
-    There are a few ways to move a branch into. I used a `git clone`, with the `--single-branch` option [[1]](https://stackoverflow.com/a/49293378):
+    There are a couple ways to move a branch into a new repository.
+    Here we use `git clone`, with the `--single-branch` option [[1]](https://stackoverflow.com/a/49293378):
 
     ```sh
     git clone --single-branch --branch <branch_to_move> <old_repo_url>
     ```
+    
+    *Note:* `<old_repo_url>` can also be a filestystem path (*e.g.* `/path/to/repo/`)
 
 2. Removing the old remote from the new repository
 
